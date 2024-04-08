@@ -1,7 +1,21 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { authContext } from "../../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+    const { user, createLogOut } = useContext(authContext);
+    //handle log out
+    const handleLogOut = () => {
+        createLogOut()
+        .then(result=>{
+            console.log(result);
+            console.log('log out Successfully.');
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+    }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/update">Update Profile</NavLink></li>
@@ -28,12 +42,19 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <NavLink to="/login" className="btn">Login</NavLink>
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </div>
+                    {
+                        user ?
+                            <>
+                                <button onClick={handleLogOut} className="btn">Log out</button>
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    </div>
+                                </div>
+                            </>
+                            :
+                            <Link to="/login" className="btn">Login</Link>
+                    }
                 </div>
             </div>
         </div>
