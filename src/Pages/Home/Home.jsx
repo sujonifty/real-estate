@@ -1,9 +1,10 @@
+import Slide from "../../Components/Slide";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <Slide></Slide>
         </div>
     );
 };

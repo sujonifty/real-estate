@@ -35,12 +35,18 @@ const Register = () => {
         <div>
             <div className="flex justify-center items-center">
                 <div className="card shrink-0  w-full max-w-sm shadow-2xl bg-base-100">
-                    <form onSubmit={handleRegister} className="card-body">
+                    <form onSubmit={handleRegister} className="card-body bg-[url('../assets/7.jpg')]">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
                             <input name="name" type="text" placeholder="Name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">PhotoURL</span>
+                            </label>
+                            <input name="photo" type="text" placeholder="PhotoURL" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
