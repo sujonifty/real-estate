@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
-                console.log('Login successfully');
+                toast('Login successfully');
             })
             .catch(error => {
                 console.error(error);
@@ -30,7 +31,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
-                console.log('Login successfully by google');
+                toast('Login successfully by google');
             })
             .catch(error => {
                 console.error(error);
@@ -43,7 +44,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
-                console.log('Login successfully by GitHub');
+                toast('Login successfully by GitHub');
             })
             .catch(error => {
                 console.error(error);

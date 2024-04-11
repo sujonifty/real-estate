@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
+import { toast } from 'react-toastify';
 
 
 const Register = () => {
-    const { createUser, createGoogleUser } = useContext(authContext);
+    const { createUser } = useContext(authContext);
 
     //Handle login 
     const handleRegister = (e) => {
@@ -21,16 +22,14 @@ const Register = () => {
                 console.log(user.email);
                 // console.log(user.displayName);
                 // console.log(result.displayName);
+                toast('Register successfully')
             })
             .catch(error => {
                 console.error(error);
             })
     }
 
-    //handle google sign
-    // const handleGoogle =()=>{
-    //     createGoogleUser()
-    // }
+   
     return (
         <div>
             <div className="flex justify-center items-center">

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 const Card = ({ category }) => {
     const { id, estate_title, segment_name, image, location, status,description, area } = category;
@@ -11,7 +12,7 @@ const Card = ({ category }) => {
                     <h2 className="text-xl font-semibold tracking-wide">{estate_title}</h2>
                 </div>
                 <p className="text-gray-100">{description}</p>
-                <button></button>
+                <NavLink to={`/cardDetails/${id}`} className="btn font-bold">View Details</NavLink>
             </div>
         </div>
     );
