@@ -5,7 +5,9 @@ import { authContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
     const { user, createLogOut } = useContext(authContext);
-    //handle log out
+    
+    
+    //handle log out 
     const handleLogOut = () => {
         createLogOut()
         .then(result=>{
@@ -48,7 +50,7 @@ const Navbar = () => {
                                 <button onClick={handleLogOut} className="btn">Log out</button>
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
-                                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        <img alt="user photo" src={user.photoURL} title={user.displayName}/>
                                     </div>
                                 </div>
                             </>

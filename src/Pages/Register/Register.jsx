@@ -1,27 +1,49 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 import { toast } from 'react-toastify';
-
+import { updateProfile } from "firebase/auth";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoMdEye } from "react-icons/io";
 
 const Register = () => {
     const { createUser } = useContext(authContext);
-
+    const [error, setError] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
     //Handle login 
     const handleRegister = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
+        const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, email, password);
 
+        setError("");
+
+        if (password.length < 6) {
+            setError('password must be 6 characters');
+            return;
+        }
+        if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)) {
+            setError('password must be an Uppercase & LowerCase letter');
+            return;
+        }
         createUser(email, password)
             .then(result => {
                 const user = result.user
-                console.log(user);
-                console.log(user.email);
-                // console.log(user.displayName);
-                // console.log(result.displayName);
+                // update profile 
+                updateProfile(user, {
+                    displayName: name,
+                    photoURL: photo,
+
+                })
+                    .then(() => {
+                        console.log("profile updated");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    })
                 toast('Register successfully')
             })
             .catch(error => {
@@ -29,7 +51,7 @@ const Register = () => {
             })
     }
 
-   
+
     return (
         <div>
             <div className="flex justify-center items-center">
@@ -40,6 +62,7 @@ const Register = () => {
                                 <span className="label-text">Name</span>
                             </label>
                             <input name="name" type="text" placeholder="Name" className="input input-bordered" required />
+
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -53,13 +76,24 @@ const Register = () => {
                             </label>
                             <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                         </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                        <label className="input input-bordered flex items-center gap-2">
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                name="password"
+                                className="grow"
+                                placeholder="password" />
 
-                        </div>
+                            <span onClick={() => { setShowPassword(!showPassword) }}>
+                                {
+                                    showPassword ? <IoMdEyeOff /> : <IoMdEye />
+
+                                }
+                            </span>
+
+                        </label>
+                        {
+                            error && <small className="text-red-700">{error}</small>
+                        }
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
                         </div>

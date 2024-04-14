@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 import { toast } from 'react-toastify';
+import { IoMdEyeOff } from "react-icons/io";
+import { IoMdEye } from "react-icons/io";
 
 
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const { createLogin, createGoogleUser, createGithubUser } = useContext(authContext);
     //Handle login 
     const handleLogin = (e) => {
@@ -13,11 +16,13 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
+       
+
         createLogin(email, password)
             .then(result => {
                 const user = result.user
-                console.log(user);
-                console.log(user.email);
+                const userName = result.displayName;
+                console.log(user.email, userName);
                 toast('Login successfully');
             })
             .catch(error => {
@@ -60,15 +65,25 @@ const Login = () => {
                         </label>
                         <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                     </div>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Password</span>
-                        </label>
-                        <input name="password" type="password" placeholder="password" className="input input-bordered" required />
-                        <label className="label">
-                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                        </label>
-                    </div>
+
+                    <label className="input input-bordered flex items-center gap-2">
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            name="password"
+                            className="grow"
+                            placeholder="password" />
+
+                        <span onClick={() => { setShowPassword(!showPassword) }}>
+                            {
+                                showPassword ? <IoMdEyeOff /> : <IoMdEye />
+
+                            }
+                        </span>
+
+                    </label>
+                    <label className="label">
+                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>
                     </div>

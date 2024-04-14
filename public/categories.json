@@ -1,119 +1,155 @@
 [
-    {
-        "id": 1,
-        "estate_title": "Modern Condo with City View",
-        "segment_name": "Luxury",
-        "description": "Stunning condo with panoramic city views, located in the heart of downtown.This stunning modern condo offers luxurious living with breathtaking panoramic views of the city skyline. Situated in the vibrant heart of downtown, this meticulously designed condo boasts floor-to-ceiling windows that flood the space with natural light, creating an airy and inviting ambiance. The open-concept layout seamlessly integrates the living, dining, and kitchen areas, making it perfect for both relaxation and entertaining. The master suite offers a peaceful retreat with a spa-like en-suite bathroom and ample closet space, while the additional bedrooms provide flexibility for guests or a home office. Residents can indulge in a range of amenities, including a state-of-the-art fitness center, rooftop terrace, and concierge service. With its prime location and modern design, this condo offers the ultimate urban lifestyle.",
-        "price": "$1,200,000",
-        "status": "sale",
-        "area": "1800 sq ft",
-        "location": "New York City, NY",
-        "facilities": ["living room", "swimming pool", "gym"],
-        "image": "https://i.ibb.co/svMQJvh/9.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 2,
-        "estate_title": "Spacious Family Home",
-        "segment_name": "Residential",
-        "description": "Beautiful family home with ample space for living and entertaining.Welcome home to this spacious family retreat, perfect for those seeking comfort and functionality. Step inside to discover a well-designed floor plan with generous living spaces that cater to modern family living. The gourmet kitchen is a chef's delight, equipped with high-end appliances, ample counter space, and a convenient breakfast bar. The adjoining living and dining areas provide a seamless flow, ideal for hosting gatherings with family and friends. Upstairs, the master suite offers a serene escape with a luxurious en-suite bathroom and walk-in closet, while the additional bedrooms provide versatility for guests or a home office. Outside, the expansive backyard beckons with lush landscaping and plenty of space for outdoor activities. With its prime location and spacious design, this home is the epitome of family living.",
-        "price": "$800,000",
-        "status": "sale",
-        "area": "2500 sq ft",
-        "location": "Los Angeles, CA",
-        "facilities": ["living room", "backyard", "garage"],
-        "image": "https://i.ibb.co/qgm74ZP/8.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 3,
-        "estate_title": "Luxury Beachfront Villa",
-        "segment_name": "Luxury",
-        "description": "Exquisite villa offering unparalleled ocean views and luxury amenities.Escape to paradise with this exquisite beachfront villa, where luxury meets tranquility. Nestled along the pristine shores of Miami Beach, this stunning villa boasts unparalleled ocean views and a host of lavish amenities. The spacious interior features elegant design elements, including marble floors, vaulted ceilings, and designer furnishings. The expansive living areas offer seamless indoor-outdoor living, with sliding glass doors that open to a private terrace overlooking the turquoise waters. The master suite is a true sanctuary, with a spa-like en-suite bathroom and a private balcony with panoramic views. Outside, the lush tropical landscape sets the stage for outdoor entertaining, with a sparkling infinity pool, hot tub, and al fresco dining area. With its unparalleled location and luxurious amenities, this beachfront villa offers the ultimate in coastal living.",
-        "price": "$3,500,000",
-        "status": "sale",
-        "area": "5000 sq ft",
-        "location": "Miami Beach, FL",
-        "facilities": ["living room", "swimming pool", "private beach access"],
-        "image": "https://i.ibb.co/3YzWPMj/7.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 4,
-        "estate_title": "Downtown Penthouse",
-        "segment_name": "Luxury",
-        "description": "Spectacular penthouse in the heart of the city, boasting breathtaking skyline views.",
-        "price": "$2,500,000",
-        "status": "sale",
-        "area": "2200 sq ft",
-        "location": "Chicago, IL",
-        "facilities": ["living room", "rooftop terrace", "fitness center"],
-        "image": "https://i.ibb.co/W3yspcq/6.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 5,
-        "estate_title": "Charming Countryside Retreat",
-        "segment_name": "Residential",
-        "description": "Quaint countryside home surrounded by lush greenery and tranquility.",
-        "price": "$600,000",
-        "status": "sale",
-        "area": "1800 sq ft",
-        "location": "Asheville, NC",
-        "facilities": ["living room", "garden", "fireplace"],
-        "image": "https://i.ibb.co/qgm74ZP/8.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 6,
-        "estate_title": "Modern Loft in the Arts District",
-        "segment_name": "Urban",
-        "description": "Chic loft space located in the vibrant arts district, perfect for urban living.",
-        "price": "$900,000",
-        "status": "sale",
-        "area": "1500 sq ft",
-        "location": "Portland, OR",
-        "facilities": ["living room", "open floor plan", "private balcony"],
-        "image": "https://i.ibb.co/syHzNHQ/4.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 7,
-        "estate_title": "Exclusive Mountain Retreat",
-        "segment_name": "Luxury",
-        "description": "Exclusive mountain retreat offering serenity and luxury amidst nature's beauty.",
-        "price": "$2,000,000",
-        "status": "sale",
-        "area": "3500 sq ft",
-        "location": "Aspen, CO",
-        "facilities": ["living room", "hot tub", "ski-in/ski-out access"],
-        "image": "https://i.ibb.co/x6xKFSw/3.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 8,
-        "estate_title": "Luxury Waterfront Estate",
-        "segment_name": "Luxury",
-        "description": "Magnificent waterfront estate with stunning views and lavish amenities.",
-        "price": "$4,500,000",
-        "status": "sale",
-        "area": "6000 sq ft",
-        "location": "Seattle, WA",
-        "facilities": ["living room", "infinity pool", "private dock"],
-        "image": "https://i.ibb.co/ZMp51k8/2.jpg",
-        "view_property_button": "View Property"
-      },
-      {
-        "id": 9,
-        "estate_title": "Cozy Cottage by the Lake",
-        "segment_name": "Residential",
-        "description": "Charming cottage nestled by the lake, offering tranquility and charm.",
-        "price": "$400,000",
-        "status": "sale",
-        "area": "1200 sq ft",
-        "location": "Lake Tahoe, CA",
-        "facilities": ["living room", "lake access", "deck"],
-        "image": "https://i.ibb.co/9sGKnxH/1.jpg",
-        "view_property_button": "View Property"
-      }
+  {
+    "id": 1,
+    "estate_title": "Modern Condo with City View",
+    "segment_name": "Luxury",
+    "description": "Nestled in the heart of downtown New York City, this stunning modern condo offers an unparalleled urban lifestyle. Boasting panoramic city views, the meticulously designed space features floor-to-ceiling windows that flood the interior with natural light, creating an airy and inviting ambiance. The open-concept layout seamlessly integrates the living, dining, and kitchen areas, providing the perfect setting for relaxation and entertaining. The master suite serves as a peaceful retreat with a spa-like en-suite bathroom and ample closet space, while additional bedrooms offer flexibility for guests or a home office. Residents can indulge in a range of amenities, including a state-of-the-art fitness center, rooftop terrace, and personalized concierge service. With its prime location and modern design, this condo epitomizes luxury urban living.",
+    "price": "$1,200,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "New York City, NY",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "gym"
+    ],
+    "image": "https://i.ibb.co/svMQJvh/9.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 2,
+    "estate_title": "Spacious Family Home",
+    "segment_name": "Residential",
+    "description": "Welcome to this spacious family retreat located in Los Angeles, California. This beautiful home offers ample space for living and entertaining, featuring a well-designed floor plan with generous living areas perfect for modern family living. The gourmet kitchen is a chef's delight, equipped with high-end appliances, ample counter space, and a convenient breakfast bar. Upstairs, the master suite offers a serene escape with a luxurious en-suite bathroom and walk-in closet, while additional bedrooms provide versatility for guests or a home office. Outside, the expansive backyard beckons with lush landscaping and plenty of space for outdoor activities. With its prime location and spacious design, this home embodies the essence of family living.",
+    "price": "$800,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Los Angeles, CA",
+    "facilities": [
+      "living room",
+      "backyard",
+      "garage"
+    ],
+    "image": "https://i.ibb.co/qgm74ZP/8.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 3,
+    "estate_title": "Luxury Beachfront Villa",
+    "segment_name": "Luxury",
+    "description": "Escape to paradise with this exquisite beachfront villa, where luxury meets tranquility. Nestled along the pristine shores of Miami Beach, this stunning villa boasts unparalleled ocean views and a host of lavish amenities. The spacious interior features elegant design elements, including marble floors, vaulted ceilings, and designer furnishings. The expansive living areas offer seamless indoor-outdoor living, with sliding glass doors that open to a private terrace overlooking the turquoise waters. The master suite is a true sanctuary, with a spa-like en-suite bathroom and a private balcony with panoramic views. Outside, the lush tropical landscape sets the stage for outdoor entertaining, with a sparkling infinity pool, hot tub, and al fresco dining area. With its unparalleled location and luxurious amenities, this beachfront villa offers the ultimate in coastal living.",
+    "price": "$3,500,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Miami Beach, FL",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "private beach access"
+    ],
+    "image": "https://i.ibb.co/3YzWPMj/7.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 4,
+    "estate_title": "Downtown Penthouse",
+    "segment_name": "Luxury",
+    "description": "Live the high life in this spectacular downtown penthouse, where luxury meets convenience in the heart of the city. Perched atop a prestigious skyscraper, this penthouse offers unparalleled views of the iconic skyline below. The expansive living space features floor-to-ceiling windows that flood the interior with natural light, creating a bright and inviting ambiance. The open-concept layout is perfect for entertaining, with a spacious living area, formal dining room, and gourmet kitchen equipped with top-of-the-line appliances. The master suite is a true retreat, with a lavish en-suite bathroom, walk-in closet, and private balcony overlooking the cityscape. Residents can enjoy access to a range of amenities, including a rooftop terrace, fitness center, and concierge service. With its unbeatable location and luxurious finishes, this penthouse redefines urban living.",
+    "price": "$2,500,000",
+    "status": "sale",
+    "area": "2200 sq ft",
+    "location": "Chicago, IL",
+    "facilities": [
+      "living room",
+      "rooftop terrace",
+      "fitness center"
+    ],
+    "image": "https://i.ibb.co/W3yspcq/6.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 5,
+    "estate_title": "Charming Countryside Retreat",
+    "segment_name": "Residential",
+    "description": "Discover tranquility with this charming countryside retreat nestled amidst lush greenery. Whether you're enjoying the warmth of the fireplace in the cozy living room or exploring the expansive garden, this home offers a peaceful escape from the hustle and bustle of city life.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "Asheville, NC",
+    "facilities": [
+      "living room",
+      "garden",
+      "fireplace"
+    ],
+    "image": "https://i.ibb.co/qgm74ZP/8.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 6,
+    "estate_title": "Modern Loft in the Arts District",
+    "segment_name": "Urban",
+    "description": "Chic loft space located in the vibrant arts district, perfect for urban living.Embrace urban living with this chic loft located in the vibrant arts district. Whether you're enjoying the open-concept living area or taking in city views from the private balcony, this loft offers a stylish and contemporary living experience in the heart of the city.",
+    "price": "$900,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Portland, OR",
+    "facilities": [
+      "living room",
+      "open floor plan",
+      "private balcony"
+    ],
+    "image": "https://i.ibb.co/syHzNHQ/4.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 7,
+    "estate_title": "Exclusive Mountain Retreat",
+    "segment_name": "Luxury",
+    "description": "Exclusive mountain retreat offering serenity and luxury amidst nature's beauty.Experience luxury living amidst nature's beauty with this exclusive mountain retreat. Whether you're soaking in the hot tub or hitting the slopes with ski-in/ski-out access, this retreat offers the perfect blend of relaxation and adventure.",
+    "price": "$2,000,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": "Aspen, CO",
+    "facilities": [
+      "living room",
+      "hot tub",
+      "ski-in/ski-out access"
+    ],
+    "image": "https://i.ibb.co/x6xKFSw/3.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 8,
+    "estate_title": "Luxury Waterfront Estate",
+    "segment_name": "Luxury",
+    "description": "Magnificent waterfront estate with stunning views and lavish amenities.Experience luxury living amidst nature's beauty with this exclusive mountain retreat. Whether you're soaking in the hot tub or hitting the slopes with ski-in/ski-out access, this retreat offers the perfect blend of relaxation and adventure.",
+    "price": "$4,500,000",
+    "status": "sale",
+    "area": "6000 sq ft",
+    "location": "Seattle, WA",
+    "facilities": [
+      "living room",
+      "infinity pool",
+      "private dock"
+    ],
+    "image": "https://i.ibb.co/ZMp51k8/2.jpg",
+    "view_property_button": "View Property"
+  },
+  {
+    "id": 9,
+    "estate_title": "Cozy Cottage by the Lake",
+    "segment_name": "Residential",
+    "description": "Charming cottage nestled by the lake, offering tranquility and charm.Indulge in luxury living with this magnificent waterfront estate boasting stunning views and lavish amenities. Whether you're lounging by the infinity pool or enjoying water activities from the private dock, this estate offers the ultimate waterfront living experience.",
+    "price": "$400,000",
+    "status": "sale",
+    "area": "1200 sq ft",
+    "location": "Lake Tahoe, CA",
+    "facilities": [
+      "living room",
+      "lake access",
+      "deck"
+    ],
+    "image": "https://i.ibb.co/9sGKnxH/1.jpg",
+    "view_property_button": "View Property"
+  }
 ]

@@ -1,4 +1,4 @@
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut,updateProfile  } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../Firebase/Firebase.config";
 
@@ -39,6 +39,7 @@ const AuthProvider = ({children}) => {
     const createLogOut=()=>{
         return signOut(auth);
     }
+
     useEffect(()=>{
         const  unSubscribe = onAuthStateChanged(auth, (currentUser)=>{
             if(currentUser){
@@ -51,6 +52,15 @@ const AuthProvider = ({children}) => {
             unSubscribe();
         }
     },[]);
+
+    // update profile 
+    // const createUpdate =(userName,photo)=>{
+    //     return updateProfile(auth.currentUser, {
+    //         displayName: "Jane Q. User", 
+    //         photoURL: "https://example.com/jane-q-user/profile.jpg"
+    //       })
+    // }
+    //Get user's profile
     
     const authInfo={
         user,
