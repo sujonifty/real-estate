@@ -11,6 +11,8 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CardDetails from './Components/CardDetails';
+import UpdateProfile from './Pages/UpdateProfile/UpdateProfile';
+import PrivateRoute from './Components/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/update",
+        element: <PrivateRoute>
+          <UpdateProfile></UpdateProfile>
+        </PrivateRoute>,
       },
       {
         path: "/cardDetails/:id",

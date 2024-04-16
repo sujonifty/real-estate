@@ -5,18 +5,18 @@ import { authContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
     const { user, createLogOut } = useContext(authContext);
-    
-    
+
+
     //handle log out 
     const handleLogOut = () => {
         createLogOut()
-        .then(result=>{
-            console.log(result);
-            console.log('log out Successfully.');
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result);
+                console.log('log out Successfully.');
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
@@ -36,7 +36,10 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Re-Radar</a>
+                    <div className="btn-ghost rounded-xl p-2">
+                    <a className=" text-xl font-bold"><span className="text-orange-600 ">P</span>anorama</a><br />
+                    <small className="text-[10px] font-semibold -mt-1 hidden md:flex">REAL ESTATE AGENCY</small>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -47,10 +50,10 @@ const Navbar = () => {
                     {
                         user ?
                             <>
-                                <button onClick={handleLogOut} className="btn">Log out</button>
+                                <button onClick={handleLogOut} className="btn hidden md:flex">Log out</button>
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
-                                        <img alt="user photo" src={user.photoURL} title={user.displayName}/>
+                                        <img alt="user photo" src={user.photoURL} title={user.displayName} />
                                     </div>
                                 </div>
                             </>

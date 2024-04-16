@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 import { toast } from 'react-toastify';
 import { IoMdEyeOff } from "react-icons/io";
@@ -7,8 +7,10 @@ import { IoMdEye } from "react-icons/io";
 
 
 const Login = () => {
-    const [showPassword, setShowPassword] = useState(false);
+    
     const { createLogin, createGoogleUser, createGithubUser } = useContext(authContext);
+    const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
     //Handle login 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -16,13 +18,13 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
-       
-
         createLogin(email, password)
             .then(result => {
                 const user = result.user
                 const userName = result.displayName;
                 console.log(user.email, userName);
+                e.target.reset();
+                navigate('/')
                 toast('Login successfully');
             })
             .catch(error => {

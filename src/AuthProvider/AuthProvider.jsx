@@ -7,6 +7,7 @@ export const authContext = createContext(null);
 const AuthProvider = ({children}) => {
     const [user, setUser]= useState(null);
     const [loading,setLoading]=useState(false);
+    
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
@@ -21,6 +22,7 @@ const AuthProvider = ({children}) => {
     const createLogin=(email,password)=>{
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
+        
     }
 
     //sign in by google
@@ -54,14 +56,25 @@ const AuthProvider = ({children}) => {
     },[]);
 
     // update profile 
-    // const createUpdate =(userName,photo)=>{
-    //     return updateProfile(auth.currentUser, {
-    //         displayName: "Jane Q. User", 
-    //         photoURL: "https://example.com/jane-q-user/profile.jpg"
-    //       })
-    // }
-    //Get user's profile
+    const createUpdate =(userName,photo)=>{
+        return updateProfile(auth.currentUser, {
+            displayName: userName, 
+            photoURL: photo
+          })
+    }
+
     
+    //Get user's profile
+    // const handleUser=()=>{
+
+    //     if (user !== null) {
+    //         // The user object has basic properties such as display name, email, etc.
+    //         const displayName = user.displayName;
+    //         const email = user.email;
+    //         const photoURL = user.photoURL;
+    //         console.log(displayName,email,photoURL)
+    //     }
+    // }
     const authInfo={
         user,
         loading,
@@ -69,6 +82,7 @@ const AuthProvider = ({children}) => {
         createLogin,
         createGoogleUser,
         createGithubUser,
+        createUpdate,
         createLogOut,
     }
 
