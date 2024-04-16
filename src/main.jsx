@@ -13,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CardDetails from './Components/CardDetails';
 import UpdateProfile from './Pages/UpdateProfile/UpdateProfile';
 import PrivateRoute from './Components/PrivateRoute';
+import UserProfile from './Pages/UserProfile/UserProfile';
 
 const router = createBrowserRouter([
   {
@@ -35,14 +36,22 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: "/update",
+        path: "/updateProfile",
         element: <PrivateRoute>
           <UpdateProfile></UpdateProfile>
         </PrivateRoute>,
       },
       {
+        path: "/userProfile",
+        element: <PrivateRoute>
+          <UserProfile></UserProfile>
+        </PrivateRoute>,
+      },
+      {
         path: "/cardDetails/:id",
-        element: <CardDetails></CardDetails>,
+        element:<PrivateRoute>
+          <CardDetails></CardDetails>
+        </PrivateRoute> ,
         loader: ()=>fetch('/categories.json'),
       },
     ]

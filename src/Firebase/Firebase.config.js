@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyADEkYINO2hDBq5Ty9rjI5wgB_SmWDiNwI",
-  authDomain: "residence-radar.firebaseapp.com",
-  projectId: "residence-radar",
-  storageBucket: "residence-radar.appspot.com",
-  messagingSenderId: "446247882515",
-  appId: "1:446247882515:web:9bb19bed5c1ddd9f1b14e6"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

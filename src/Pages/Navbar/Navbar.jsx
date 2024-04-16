@@ -20,8 +20,8 @@ const Navbar = () => {
     }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/update">Update Profile</NavLink></li>
-        <li><NavLink to="/user">User Profile</NavLink></li>
+        <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        <li><NavLink to="/userProfile">User Profile</NavLink></li>
 
     </>
     return (

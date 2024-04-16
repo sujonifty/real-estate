@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 import { toast } from 'react-toastify';
 import { IoMdEyeOff } from "react-icons/io";
@@ -10,7 +10,9 @@ const Login = () => {
     
     const { createLogin, createGoogleUser, createGithubUser } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false);
+    const location= useLocation();
     const navigate = useNavigate();
+
     //Handle login 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -24,7 +26,7 @@ const Login = () => {
                 const userName = result.displayName;
                 console.log(user.email, userName);
                 e.target.reset();
-                navigate('/')
+                navigate(location?.state? location.state:'/')
                 toast('Login successfully');
             })
             .catch(error => {
@@ -38,6 +40,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
+                navigate(location?.state? location.state:'/')
                 toast('Login successfully by google');
             })
             .catch(error => {
@@ -51,6 +54,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
+                navigate(location?.state? location.state:'/')
                 toast('Login successfully by GitHub');
             })
             .catch(error => {
