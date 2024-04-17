@@ -23,21 +23,21 @@ const CardDetails = () => {
                     <div className="relative shadow-xl">
                         <img className="w-full h-[30rem] " src={image} alt="home" />
                     </div>
-                    <div className="absolute top-0 w-full h-full flex justify-between bg-black bg-opacity-35">
+                    <div className="absolute top-0 w-full h-full flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
 
-                        <div className="w-1/3 mt-10 ml-5 text-left  ">
+                        <div className=" w-full md:w-1/3 md:mt-10 md:ml-5 p-2 md:p-5 md:text-left  ">
                             <h1 className="text-lg rounded-xl p-3 w-auto  text-white">
                                 We are more than <br />
                                 just a real estate firm.
                             </h1>
                         </div>
-                        <div className="w-2/3 flex justify-center items-center flex-col m-20 rounded-xl  text-left space-y-5 p-16 pl-0  bg-base-50">
-                            <h1 className=" text-5xl text-white  font-bold">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-4xl lg:text-5xl text-white  font-bold">
                                 We are here to <br />
                                 help you find your <br />
                                 dream home.
                             </h1>
-                            <button className="btn w-2/5">Contact us</button>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Contact us</button>
                         </div>
 
                     </div>
@@ -68,9 +68,9 @@ const CardDetails = () => {
                                 <p><span className="text-lg text-black font-semi-bold">Price:</span> {price}</p>
                             </div>
                         </div>
-                        <button className="btn w-3/5 mx-auto my-3" > Book Now</button>
+                        <button className="btn w-3/5 mx-auto my-3 bg-orange-500 text-white hover:text-black" > Book Now</button>
                     </div>
-                                    
+
                 </div>
             </section>
         </div>

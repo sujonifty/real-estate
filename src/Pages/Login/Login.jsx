@@ -94,16 +94,17 @@ const Login = () => {
                         error && <small className="text-red-700">{error}</small>
                     }
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Login</button>
+                        <button className="btn bg-orange-500 text-white hover:text-black">Login</button>
                     </div>
 
                     <p>Don't have an account? Please <Link to="/register" className="text-blue-700 font-semibold">Register</Link></p>
                 </form>
+                <div className="divider">OR</div>
                 <div onClick={handleGoogleLogin} className="form-control mt-6">
-                    <button className="btn btn-primary">Login By Google</button>
+                    <button className="btn bg-orange-500 w-4/5 mx-auto text-white hover:text-black">Login By Google</button>
                 </div>
                 <div className="form-control mt-6">
-                    <button onClick={handleGithubLogin} className="btn btn-primary">Login by GitHub</button>
+                    <button onClick={handleGithubLogin} className="btn w-4/5 mx-auto bg-orange-500 text-white hover:text-black">Login by GitHub</button>
                 </div>
             </div>
         </div>

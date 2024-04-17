@@ -1,4 +1,4 @@
-
+import 'animate.css';
 
 
 const ContactUs = () => {
@@ -12,19 +12,19 @@ const ContactUs = () => {
                     </div>
                     <div className="absolute top-0 w-full h-full flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
 
-                        <div className="w-full md:w-1/3 md:mt-10 md:ml-5 p-2 md:p-5 md:text-left  ">
+                        <div className=" w-full md:w-1/3 md:mt-10 md:ml-5 p-2 md:p-5 md:text-left  ">
                             <h1 className="text-lg rounded-xl p-3 w-auto  text-white">
                                 We are more than <br />
                                 just a real estate firm.
                             </h1>
                         </div>
                         <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-4xl lg:text-5xl text-white  font-bold">
+                            <h1 className="animate__animated animate__backInDown text-2xl md:text-4xl lg:text-5xl text-white  font-bold">
                                 We are here to <br />
                                 help you find your <br />
                                 dream home.
                             </h1>
-                            <button className="btn mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Contact us</button>
+                            <button className="animate__animated animate__backInUp btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Contact us</button>
                         </div>
 
                     </div>
@@ -32,7 +32,7 @@ const ContactUs = () => {
             </section>
 
             <section>
-                <div className="w-full md:w-3/5 mx-auto my-10">
+                <div className=" w-full md:w-3/5 mx-auto my-10">
                     <h1 className=" text-2xl lg:text-5xl text-orange-500 font-bold">Explore Our Exceptional Services and Products</h1>
                     <p>
                     Welcome to Panorama, where we pride ourselves on delivering exceptional [specific service or product]. Whether you're seeking a top-notch property appraisal service, expert consultations, or something uniquely tailored to your needs, you've come to the right place. Allow us to showcase the brilliance of our offerings and how they can meet your every expectation.
@@ -50,15 +50,15 @@ const ContactUs = () => {
                                 <h1 className=" text-5xl text-white  font-bold">
                                     Meet the team<br />
                                 </h1>
-                                <button className="btn w-2/5">Click</button>
+                                <button className="btn w-2/5 bg-orange-500 text-white hover:text-black">Click Here</button>
                             </div>
 
                         </div>
                     </div>
-                    <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/D4Qt7cP/a1.png" />
-                    <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/QCCG2QJ/a2.png" />
-                    <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/XXv2jqX/a3.png" />
-                    <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/zhBnfB4/a4.png" />
+                    <img alt="" className="animate__animated hover:animate__bounceInLeft w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/D4Qt7cP/a1.png" />
+                    <img alt="" className="animate__animated hover:animate__bounceInLeft w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/QCCG2QJ/a2.png" />
+                    <img alt="" className="animate__animated hover:animate__bounceInLeft w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/XXv2jqX/a3.png" />
+                    <img alt="" className="animate__animated hover:animate__bounceInLeft w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/zhBnfB4/a4.png" />
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/wLXJX4R/a6.jpg" />
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/dLCv5ys/a7.jpg" />
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://i.ibb.co/jhgFvfG/a8.jpg" />
@@ -75,7 +75,7 @@ const ContactUs = () => {
                                 <div className="text-white text-center">
                                     <p>Highlight specific services or products here. It can be a property appraisal service, a consultation, or something uniquely yours.  Give it room to shine here.</p>
                                 </div>
-                                <button className="btn w-full md:w-full lg:w-4/5 font-bold ">Book Now</button>
+                                <button className="btn w-full md:w-full bg-orange-500 text-white hover:text-black lg:w-4/5 font-bold ">Book Now</button>
                             </div>
 
                         </div>

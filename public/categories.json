@@ -13,8 +13,7 @@
       "swimming pool",
       "gym"
     ],
-    "image": "https://i.ibb.co/svMQJvh/9.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/svMQJvh/9.jpg"
   },
   {
     "id": 2,
@@ -30,8 +29,7 @@
       "backyard",
       "garage"
     ],
-    "image": "https://i.ibb.co/qgm74ZP/8.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/qgm74ZP/8.jpg"
   },
   {
     "id": 3,
@@ -47,8 +45,7 @@
       "swimming pool",
       "private beach access"
     ],
-    "image": "https://i.ibb.co/3YzWPMj/7.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/3YzWPMj/7.jpg"
   },
   {
     "id": 4,
@@ -64,8 +61,7 @@
       "rooftop terrace",
       "fitness center"
     ],
-    "image": "https://i.ibb.co/W3yspcq/6.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/W3yspcq/6.jpg"
   },
   {
     "id": 5,
@@ -81,8 +77,7 @@
       "garden",
       "fireplace"
     ],
-    "image": "https://i.ibb.co/qgm74ZP/8.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/qgm74ZP/8.jpg"
   },
   {
     "id": 6,
@@ -98,8 +93,7 @@
       "open floor plan",
       "private balcony"
     ],
-    "image": "https://i.ibb.co/syHzNHQ/4.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/syHzNHQ/4.jpg"
   },
   {
     "id": 7,
@@ -115,8 +109,7 @@
       "hot tub",
       "ski-in/ski-out access"
     ],
-    "image": "https://i.ibb.co/x6xKFSw/3.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/x6xKFSw/3.jpg"
   },
   {
     "id": 8,
@@ -132,8 +125,7 @@
       "infinity pool",
       "private dock"
     ],
-    "image": "https://i.ibb.co/ZMp51k8/2.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/ZMp51k8/2.jpg"
   },
   {
     "id": 9,
@@ -149,7 +141,6 @@
       "lake access",
       "deck"
     ],
-    "image": "https://i.ibb.co/9sGKnxH/1.jpg",
-    "view_property_button": "View Property"
+    "image": "https://i.ibb.co/9sGKnxH/1.jpg"
   }
 ]
