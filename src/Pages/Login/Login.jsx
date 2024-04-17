@@ -7,10 +7,10 @@ import { IoMdEye } from "react-icons/io";
 
 
 const Login = () => {
-    
-    const { createLogin, createGoogleUser, createGithubUser } = useContext(authContext);
+
+    const { createLogin, createGoogleUser, createGithubUser, error, setError } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false);
-    const location= useLocation();
+    const location = useLocation();
     const navigate = useNavigate();
 
     //Handle login 
@@ -18,15 +18,15 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        setError("");
 
         createLogin(email, password)
             .then(result => {
-                const user = result.user
-                const userName = result.displayName;
-                console.log(user.email, userName);
+                console.log(result);
+                // const user = result.user
+                // const userName = result.displayName;
                 e.target.reset();
-                navigate(location?.state? location.state:'/')
+                navigate(location?.state ? location.state : '/')
                 toast('Login successfully');
             })
             .catch(error => {
@@ -40,11 +40,11 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
-                navigate(location?.state? location.state:'/')
+                navigate(location?.state ? location.state : '/')
                 toast('Login successfully by google');
             })
             .catch(error => {
-                console.error(error);
+                setError(error.message);
             })
     }
     // login by github
@@ -54,11 +54,11 @@ const Login = () => {
                 const user = result.user
                 console.log(user);
                 console.log(user.email);
-                navigate(location?.state? location.state:'/')
+                navigate(location?.state ? location.state : '/')
                 toast('Login successfully by GitHub');
             })
             .catch(error => {
-                console.error(error);
+                setError(error.message);
             })
     }
     return (
@@ -90,6 +90,9 @@ const Login = () => {
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
+                    {
+                        error && <small className="text-red-700">{error}</small>
+                    }
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>
                     </div>

@@ -5,6 +5,8 @@ import { auth } from "../Firebase/Firebase.config";
 
 export const authContext = createContext(null);
 const AuthProvider = ({ children }) => {
+    
+    const [error, setError] = useState("");
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -46,7 +48,6 @@ const AuthProvider = ({ children }) => {
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
 
             setUser(currentUser);
-            console.log('current', currentUser)
             setLoading(false);
         });
         return () => {
@@ -55,10 +56,11 @@ const AuthProvider = ({ children }) => {
     }, []);
 
     // update profile 
-    const createUpdate = (userName, photo) => {
+    const createUpdate = (userName, photo, email) => {
         return updateProfile(auth.currentUser, {
             displayName: userName,
-            photoURL: photo
+            photoURL: photo,
+            email: email
         })
     }
 
@@ -67,6 +69,8 @@ const AuthProvider = ({ children }) => {
     const authInfo = {
         user,
         setUser,
+        error,
+        setError,
         loading,
         createUser,
         createLogin,

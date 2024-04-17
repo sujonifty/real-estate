@@ -13,11 +13,17 @@ const Root = () => {
         else{
             document.title= `${location.pathname.replace('/',"")}`;
         }
+       
+        if(location.state){
+            document.title= location.state;
+        }
     },[location.pathname])
     return (
         <div>
             <div className="max-w-[1280px] mx-auto">
+            <div className="mb-16">
             <Navbar></Navbar>
+            </div>
             <Outlet></Outlet>
             </div>
             <Footer></Footer>

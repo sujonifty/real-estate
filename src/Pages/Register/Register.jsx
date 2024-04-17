@@ -7,8 +7,7 @@ import { IoMdEyeOff } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
 
 const Register = () => {
-    const { createUser } = useContext(authContext);
-    const [error, setError] = useState("");
+    const { createUser,error, setError } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false);
     //Handle login 
     const handleRegister = (e) => {
@@ -17,7 +16,6 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
 
         setError("");
 
@@ -42,12 +40,12 @@ const Register = () => {
                         console.log("profile updated");
                     })
                     .catch(error => {
-                        console.error(error);
+                        setError(error.message);
                     })
                 toast('Register successfully')
             })
             .catch(error => {
-                console.error(error);
+                setError(error.message);
             })
     }
 

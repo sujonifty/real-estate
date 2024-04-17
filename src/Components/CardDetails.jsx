@@ -4,9 +4,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const CardDetails = () => {
     const { id } = useParams();
-    console.log(id)
     const data = useLoaderData();
-    console.log(data)
+  
     const [singleData, setSingleData] = useState({});
     useEffect(() => {
         if (data) {
@@ -14,7 +13,7 @@ const CardDetails = () => {
             setSingleData(datum);
         }
     }, [data, id])
-    console.log(singleData)
+    
     const { estate_title, segment_name, image, location, status, description, area } = singleData;
 
     return (
