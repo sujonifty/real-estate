@@ -29,13 +29,16 @@ const UpdateProfile = () => {
     return (
         <div>
 
-            <div className="hero min-h-screen my-10 card bg-base-200">
+            <div className="hero min-h-screen my-16 py-16 bg-sky-200 card ">
                 <div className="hero-content flex-col justify-center items-center ">
-                    <div className="text-center w-3/4 py-10 ">
-                        <h1 className="text-5xl font-bold">Update Your Profile</h1>
-                        <p className="py-6 mx-auto w-3/4">Update Your Profile, it helps you improve your online presence with practical tips for enhancing personal and professional profiles on different platforms.</p>
+                    <div className="text-center w-3/4 py-10 bg-sky-100 rounded-xl ">
+                        <h1 className="text-5xl font-bold">
+                            Update Your Profile <br />
+                            <span className="text-xl font-semibold"> is an essential handbook for refining your online identity</span>
+                        </h1>
+                        <p className="py-6 mx-auto font-medium w-3/4">Update Your Profile, it helps you improve your online presence with practical tips for enhancing personal and professional profiles on different platforms.</p>
                     </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-200">
                         <form onSubmit={handleUpdateProfile} className="card-body">
                             <div className="form-control">
                                 <label className="label">

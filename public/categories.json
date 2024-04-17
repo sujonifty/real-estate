@@ -21,8 +21,8 @@
     "estate_title": "Spacious Family Home",
     "segment_name": "Residential",
     "description": "Welcome to this spacious family retreat located in Los Angeles, California. This beautiful home offers ample space for living and entertaining, featuring a well-designed floor plan with generous living areas perfect for modern family living. The gourmet kitchen is a chef's delight, equipped with high-end appliances, ample counter space, and a convenient breakfast bar. Upstairs, the master suite offers a serene escape with a luxurious en-suite bathroom and walk-in closet, while additional bedrooms provide versatility for guests or a home office. Outside, the expansive backyard beckons with lush landscaping and plenty of space for outdoor activities. With its prime location and spacious design, this home embodies the essence of family living.",
-    "price": "$800,000",
-    "status": "sale",
+    "price": "$3500",
+    "status": "rent",
     "area": "2500 sq ft",
     "location": "Los Angeles, CA",
     "facilities": [
@@ -72,8 +72,8 @@
     "estate_title": "Charming Countryside Retreat",
     "segment_name": "Residential",
     "description": "Discover tranquility with this charming countryside retreat nestled amidst lush greenery. Whether you're enjoying the warmth of the fireplace in the cozy living room or exploring the expansive garden, this home offers a peaceful escape from the hustle and bustle of city life.",
-    "price": "$600,000",
-    "status": "sale",
+    "price": "$6,000",
+    "status": "rent",
     "area": "1800 sq ft",
     "location": "Asheville, NC",
     "facilities": [
@@ -106,8 +106,8 @@
     "estate_title": "Exclusive Mountain Retreat",
     "segment_name": "Luxury",
     "description": "Exclusive mountain retreat offering serenity and luxury amidst nature's beauty.Experience luxury living amidst nature's beauty with this exclusive mountain retreat. Whether you're soaking in the hot tub or hitting the slopes with ski-in/ski-out access, this retreat offers the perfect blend of relaxation and adventure.",
-    "price": "$2,000,000",
-    "status": "sale",
+    "price": "$4000",
+    "status": "rent",
     "area": "3500 sq ft",
     "location": "Aspen, CO",
     "facilities": [

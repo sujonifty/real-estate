@@ -12,7 +12,6 @@ const UserProfile = () => {
                     <div className="my-2 space-y-1">
                         <h2 className="text-xl font-semibold sm:text-2xl">{user.displayName}</h2>
                         <h2 className="text-xl  sm:text-xl">{user.email}</h2>
-                        <p className="px-5 text-xs sm:text-base dark:text-gray-600">Full-stack developer</p>
                     </div>
                     <div className="flex justify-center pt-2 space-x-4 align-center">
                         <a rel="noopener noreferrer" href="github.com/sujonifty" aria-label="GitHub" className="p-2 rounded-md dark:text-gray-800 hover:dark:text-violet-600">

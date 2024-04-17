@@ -21,11 +21,13 @@ const Navbar = () => {
     }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
-        <li><NavLink to="/userProfile">User Profile</NavLink></li>
-        {/* {
+        <li><NavLink to="/contactUs">Contact us</NavLink></li>
+        {
+            user? <li><NavLink to="/updateProfile">Update Profile</NavLink></li> : ""
+        }
+        {
             user? <li><NavLink to="/userProfile">User Profile</NavLink></li> : ""
-        } */}
+        }
 
     </>
     return (

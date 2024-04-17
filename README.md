@@ -1,8 +1,27 @@
-# React + Vite
+# real-state-project:Panorama
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Panorama(Real Estate ) Application is a comprehensive platform designed to streamline the process of selling, and renting properties.
 
-Currently, two official plugins are available:
+# Website Link:
+* Click here to see the website:[https://residence-radar.web.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Feature
+    * Home: The home page have these sections - Navbar, SwiperSlider, Estates(here iI use AOS package), Footer
+& 2 extra section 
+    * Login:
+    * Register
+   # conditional Route
+   If a user is logged in, the user-image, user profile & update profile will show on the Navbar and When user hover over the user image it will show the user name.
+
+    * User Profiles
+    * Update Profiles
+    
+   # Private Route
+    * Contact Us:
+
+    
+
+
+# Support
+* If you encounter any issues or have any questions about our Real Estate Application, please don't hesitate to contact our support team at supportsujonifty@gmail.com. We're here to help!
+

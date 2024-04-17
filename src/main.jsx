@@ -14,6 +14,7 @@ import CardDetails from './Components/CardDetails';
 import UpdateProfile from './Pages/UpdateProfile/UpdateProfile';
 import PrivateRoute from './Components/PrivateRoute';
 import UserProfile from './Pages/UserProfile/UserProfile';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,12 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/contactUs",
+        element: <PrivateRoute>
+          <ContactUs></ContactUs>
+        </PrivateRoute>,
       },
       {
         path: "/updateProfile",
