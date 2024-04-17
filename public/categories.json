@@ -2,7 +2,7 @@
   {
     "id": 1,
     "estate_title": "Modern Condo with City View",
-    "segment_name": "Luxury",
+    "segment_name": "townhouses",
     "description": "Nestled in the heart of downtown New York City, this stunning modern condo offers an unparalleled urban lifestyle. Boasting panoramic city views, the meticulously designed space features floor-to-ceiling windows that flood the interior with natural light, creating an airy and inviting ambiance. The open-concept layout seamlessly integrates the living, dining, and kitchen areas, providing the perfect setting for relaxation and entertaining. The master suite serves as a peaceful retreat with a spa-like en-suite bathroom and ample closet space, while additional bedrooms offer flexibility for guests or a home office. Residents can indulge in a range of amenities, including a state-of-the-art fitness center, rooftop terrace, and personalized concierge service. With its prime location and modern design, this condo epitomizes luxury urban living.",
     "price": "$1,200,000",
     "status": "sale",
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "estate_title": "Spacious Family Home",
-    "segment_name": "Residential",
+    "segment_name": "Single-family homes",
     "description": "Welcome to this spacious family retreat located in Los Angeles, California. This beautiful home offers ample space for living and entertaining, featuring a well-designed floor plan with generous living areas perfect for modern family living. The gourmet kitchen is a chef's delight, equipped with high-end appliances, ample counter space, and a convenient breakfast bar. Upstairs, the master suite offers a serene escape with a luxurious en-suite bathroom and walk-in closet, while additional bedrooms provide versatility for guests or a home office. Outside, the expansive backyard beckons with lush landscaping and plenty of space for outdoor activities. With its prime location and spacious design, this home embodies the essence of family living.",
     "price": "$3500",
     "status": "rent",
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "estate_title": "Luxury Beachfront Villa",
-    "segment_name": "Luxury",
+    "segment_name": "student housing",
     "description": "Escape to paradise with this exquisite beachfront villa, where luxury meets tranquility. Nestled along the pristine shores of Miami Beach, this stunning villa boasts unparalleled ocean views and a host of lavish amenities. The spacious interior features elegant design elements, including marble floors, vaulted ceilings, and designer furnishings. The expansive living areas offer seamless indoor-outdoor living, with sliding glass doors that open to a private terrace overlooking the turquoise waters. The master suite is a true sanctuary, with a spa-like en-suite bathroom and a private balcony with panoramic views. Outside, the lush tropical landscape sets the stage for outdoor entertaining, with a sparkling infinity pool, hot tub, and al fresco dining area. With its unparalleled location and luxurious amenities, this beachfront villa offers the ultimate in coastal living.",
     "price": "$3,500,000",
     "status": "sale",
@@ -53,7 +53,7 @@
   {
     "id": 4,
     "estate_title": "Downtown Penthouse",
-    "segment_name": "Luxury",
+    "segment_name": "apartments",
     "description": "Live the high life in this spectacular downtown penthouse, where luxury meets convenience in the heart of the city. Perched atop a prestigious skyscraper, this penthouse offers unparalleled views of the iconic skyline below. The expansive living space features floor-to-ceiling windows that flood the interior with natural light, creating a bright and inviting ambiance. The open-concept layout is perfect for entertaining, with a spacious living area, formal dining room, and gourmet kitchen equipped with top-of-the-line appliances. The master suite is a true retreat, with a lavish en-suite bathroom, walk-in closet, and private balcony overlooking the cityscape. Residents can enjoy access to a range of amenities, including a rooftop terrace, fitness center, and concierge service. With its unbeatable location and luxurious finishes, this penthouse redefines urban living.",
     "price": "$2,500,000",
     "status": "sale",
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "estate_title": "Charming Countryside Retreat",
-    "segment_name": "Residential",
+    "segment_name": "senior living communities",
     "description": "Discover tranquility with this charming countryside retreat nestled amidst lush greenery. Whether you're enjoying the warmth of the fireplace in the cozy living room or exploring the expansive garden, this home offers a peaceful escape from the hustle and bustle of city life.",
     "price": "$6,000",
     "status": "rent",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "estate_title": "Modern Loft in the Arts District",
-    "segment_name": "Urban",
+    "segment_name": "vacation rentals",
     "description": "Chic loft space located in the vibrant arts district, perfect for urban living.Embrace urban living with this chic loft located in the vibrant arts district. Whether you're enjoying the open-concept living area or taking in city views from the private balcony, this loft offers a stylish and contemporary living experience in the heart of the city.",
     "price": "$900,000",
     "status": "sale",
@@ -104,7 +104,7 @@
   {
     "id": 7,
     "estate_title": "Exclusive Mountain Retreat",
-    "segment_name": "Luxury",
+    "segment_name": "Single-family homes",
     "description": "Exclusive mountain retreat offering serenity and luxury amidst nature's beauty.Experience luxury living amidst nature's beauty with this exclusive mountain retreat. Whether you're soaking in the hot tub or hitting the slopes with ski-in/ski-out access, this retreat offers the perfect blend of relaxation and adventure.",
     "price": "$4000",
     "status": "rent",
@@ -121,7 +121,7 @@
   {
     "id": 8,
     "estate_title": "Luxury Waterfront Estate",
-    "segment_name": "Luxury",
+    "segment_name": "townhouses",
     "description": "Magnificent waterfront estate with stunning views and lavish amenities.Experience luxury living amidst nature's beauty with this exclusive mountain retreat. Whether you're soaking in the hot tub or hitting the slopes with ski-in/ski-out access, this retreat offers the perfect blend of relaxation and adventure.",
     "price": "$4,500,000",
     "status": "sale",

@@ -5,29 +5,31 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 const Card = ({ category }) => {
-    const { id, estate_title, segment_name, image, location, status, description, area } = category;
+    const { id, estate_title, segment_name, image, location, description, area } = category;
     // console.log(category)
     return (
         <div>
             <div data-aos="flip-left"
                 data-aos-duration="2000"
-                className="max-w-xl p-6 rounded-md shadow-md bg-gray-900 text-gray-50">
+                className="max-w-xl p-6 sp rounded-md shadow-md bg-gray-900 text-gray-50">
 
                 <img data-aos="zoom-in"
                     data-aos-duration="3000"
                     src={image} alt="home"
                     className="object-cover object-center w-full rounded-md h-72 bg-gray-500" />
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div className="mt-6 mb-2">
+                <div className="space-y-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p><span className="text-lg font-semi-bold">Segment name:</span> {segment_name}</p>
+                    <h2 className="text-xl font-semibold tracking-wide">{estate_title}</h2>
+                    <p className="text-gray-100 text-balance w-11/12">{description.slice(0, 200)}</p>
+                    <div className="mt-6 mb-2 text-start pl-5">
                         <span className="block text-xs font-medium tracking-widest uppercase text-violet-400">{segment_name}</span>
-                        <h2 className="text-xl font-semibold tracking-wide">{estate_title}</h2>
+                        <p><span className="text-lg font-semi-bold">Location:</span> {location}</p>
                     </div>
-                    <p className="text-gray-100 text-ellipsis">{description.slice(0, 250)}</p>
                     <NavLink data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-delay="1000"
                         to={`/cardDetails/${id}`}
-                        className="btn font-bold">
+                        className="btn w-full font-bold">
                         View Details
                     </NavLink>
                 </div>
@@ -36,7 +38,7 @@ const Card = ({ category }) => {
         </div>
     );
 };
-Card.propTypes ={
+Card.propTypes = {
     category: PropTypes.object
 }
 export default Card;

@@ -14,14 +14,14 @@ const CardDetails = () => {
         }
     }, [data, id])
 
-    const { estate_title, segment_name, image, location, status, description, area } = singleData;
+    const { estate_title, segment_name, image, location, description, area, price, status, facilities } = singleData;
 
     return (
         <div>
             <section>
-                <div className="w-full relative ">
+                <div className="w-full relative card">
                     <div className="relative shadow-xl">
-                    <img className="w-full h-[30rem] " src={image} alt="home" />
+                        <img className="w-full h-[30rem] " src={image} alt="home" />
                     </div>
                     <div className="absolute top-0 w-full h-full flex justify-between bg-black bg-opacity-35">
 
@@ -43,16 +43,34 @@ const CardDetails = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-gray-800 text-gray-100">
-                <div className="container flex flex-col mx-auto lg:flex-row">
-                    <div className="w-full lg:w-1/3">
-                        <img src={image} alt="" />
+            <section className="bg-sky-200 text-gray-900 my-20 card">
+                <div className="container flex flex-col justify-center  mx-auto lg:flex-row">
+                    <div className="w-full lg:w-1/3 p-5 ">
+                        <img className="rounded-xl shadow-lg" src={image} alt="House" />
                     </div>
-                    <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
+                    <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12 text-left">
 
                         <h2 className="text-3xl font-semibold leading-none">{estate_title}</h2>
                         <p className="mt-4 mb-8 text-sm">{description}</p>
+                        <div className="container flex flex-col justify-evenly gap-10 lg:flex-row">
+                            <div>
+                                <p><span className="text-lg text-black font-semi-bold">Segment name:</span> {segment_name}</p>
+                                <p><span className="text-lg text-black font-semi-bold">Location:</span> {location}</p>
+                                <p><span className="text-lg text-black font-semi-bold">Area:</span> {area}</p>
+                                <p><span className="text-lg text-black font-semi-bold">Status:</span> {status}</p>
+                            </div>
+                            <div>
+                                <p><span className="text-lg text-black font-semi-bold">Facilities:</span>
+                                    {
+                                        facilities?.map((facility, index) => <li key={index} className=" font-medium ml-5">{facility}</li>)
+                                    }
+                                </p>
+                                <p><span className="text-lg text-black font-semi-bold">Price:</span> {price}</p>
+                            </div>
+                        </div>
+                        <button className="btn w-3/5 mx-auto my-3" > Book Now</button>
                     </div>
+                                    
                 </div>
             </section>
         </div>
