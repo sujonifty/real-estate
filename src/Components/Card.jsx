@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -35,5 +36,7 @@ const Card = ({ category }) => {
         </div>
     );
 };
-
+Card.propTypes ={
+    category: PropTypes.object
+}
 export default Card;

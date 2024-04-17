@@ -22,6 +22,10 @@
 # Private Route
 * Contact Us
 
+# npm package name
+* Swiper slider
+* AOS Package
+* Animate css
     
 
 

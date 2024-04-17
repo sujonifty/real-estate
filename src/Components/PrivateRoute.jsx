@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const PrivateRoute = ({children}) => {
     const location=useLocation();
@@ -19,5 +19,7 @@ const PrivateRoute = ({children}) => {
         </div>
     );
 };
-
+PrivateRoute.propTypes ={
+    children: PropTypes.node
+}
 export default PrivateRoute;
