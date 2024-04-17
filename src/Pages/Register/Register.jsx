@@ -5,9 +5,10 @@ import { toast } from 'react-toastify';
 import { updateProfile } from "firebase/auth";
 import { IoMdEyeOff } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
+import { auth } from "../../Firebase/Firebase.config";
 
 const Register = () => {
-    const { createUser,error, setError } = useContext(authContext);
+    const { createUser,error, setError,setUser } = useContext(authContext);
     const [showPassword, setShowPassword] = useState(false);
     //Handle login 
     const handleRegister = (e) => {
@@ -29,14 +30,18 @@ const Register = () => {
         }
         createUser(email, password)
             .then(result => {
-                const user = result.user
+                console.log(result);
+                e.target.reset();
                 // update profile 
-                updateProfile(user, {
+                updateProfile(auth.currentUser, {
                     displayName: name,
                     photoURL: photo,
 
                 })
                     .then(() => {
+                        setUser((prevUser) => {
+                            return { ...prevUser, displayName: name, photoURL: photo, email: email }
+                        })
                         console.log("profile updated");
                     })
                     .catch(error => {

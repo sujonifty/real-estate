@@ -11,10 +11,11 @@ const UpdateProfile = () => {
         const name = e.target.name.value;
         const email = e.target.email.value;
         const photo = e.target.photo.value;
-        console.log(name, photo, email);
+
         createUpdate(name, photo, email)
             .then(result => {
-                console.log(result)
+                console.log(result);
+                e.target.reset();
                 setUser((prevUser) => {
                     return { ...prevUser, displayName: name, photoURL: photo, email: email }
                 })
@@ -44,20 +45,20 @@ const UpdateProfile = () => {
                                 <label className="label">
                                     <span className="label-text">Full name</span>
                                 </label>
-                                <input name="name" value={user.displayName} id="name" type="text" placeholder="Your name" className="input input-bordered" required />
+                                <input name="name"  id="name" type="text" placeholder="Your name" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">PhotoURL</span>
                                 </label>
-                                <input name="photo" value={user.photoURL} id="photo" type="photo" placeholder="Your PhotoURL" className="input input-bordered" required />
+                                <input name="photo" id="photo" type="photo" placeholder="Your PhotoURL" className="input input-bordered" required />
 
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input name="email" value={user.email} type="email" placeholder="email" className="input input-bordered" required />
+                                <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
                                 <button type="submit" className="btn btn-primary">Updated</button>

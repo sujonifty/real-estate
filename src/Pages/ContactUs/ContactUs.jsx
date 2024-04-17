@@ -107,7 +107,7 @@ const ContactUs = () => {
             </section>
 
             <section>
-                <div className="w-full relative ">
+                <div className="w-full relative my-20">
                     <div className="relative shadow-xl">
                         <img className="w-full h-[40rem] md:h-[30rem] " src="banner.jpg" alt="home" />
                     </div>
