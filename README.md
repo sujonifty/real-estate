@@ -17,7 +17,7 @@ Panorama(Real Estate ) Application is a comprehensive platform designed to strea
     * Update Profiles
     
    # Private Route
-    * Contact Us:
+    * Contact Us
 
     
 
