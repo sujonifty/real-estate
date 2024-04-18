@@ -32,7 +32,7 @@ const ContactUs = () => {
             </section>
 
             <section>
-                <div className=" w-full md:w-3/5 mx-auto my-10 bg-[#f4ebe4] p-3 lg:p-10 rounded-xl ">
+                <div className=" w-full md:w-3/5 mx-auto my-y0 bg-[#f4ebe4] p-3 lg:p-10 rounded-xl ">
                     <h1 className=" text-2xl lg:text-5xl text-orange-500 font-bold">Explore Our Exceptional Services and Products</h1>
                     <p>
                     Welcome to Panorama, where we pride ourselves on delivering exceptional [specific service or product]. Whether you're seeking a top-notch property appraisal service, expert consultations, or something uniquely tailored to your needs, you've come to the right place. Allow us to showcase the brilliance of our offerings and how they can meet your every expectation.

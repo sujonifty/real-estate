@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Slide></Slide>
 
-            <div className="bg-[#f4ebe4] rounded-xl shadow-xl w-full lg:w-4/5 mx-auto text-balance space-y-4 my-10  p-2 lg:p-5">
+            <div className="bg-[#f4ebe4] rounded-lg  w-full lg:w-4/5 mx-auto text-balance space-y-4 my-20  p-2 lg:p-5">
                 <h1 className="font-bold text-5xl text-orange-400">A New Perspective on Property</h1>
                 <h1>Welcome to Panorama Real Estate – where every view tells a story. Our mission is to provide you with panoramic perspectives on properties, guiding you through an immersive experience as you search for your ideal home or investment opportunity. With a focus on capturing the essence of each property through stunning visuals and detailed descriptions, we aim to make your real estate journey both captivating and informative. Get ready to explore a world of possibilities with Panorama Real Estate.</h1>
             </div>
@@ -20,7 +20,7 @@ const Home = () => {
                 }
             </div>
 
-            <div className="my-20 bg-[#f4ebe4] p-3 lg:p-10">
+            <div className="my-20 bg-[#f4ebe4] p-3 lg:p-10 rounded-lg">
                 <div className="w-full lg:w-4/5  mx-auto p-2 lg:p-5 text-balance space-y-4">
                     <h1 className="font-bold text-5xl text-orange-400">See How It Works</h1>
                     <p>

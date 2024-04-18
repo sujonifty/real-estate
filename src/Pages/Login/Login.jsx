@@ -64,7 +64,7 @@ const Login = () => {
     return (
         <div className="flex justify-center items-center">
             <div className="card shrink-0  w-full max-w-sm shadow-2xl bg-base-100">
-                <form onSubmit={handleLogin} className="card-body">
+                <form onSubmit={handleLogin} className="card-body p-5">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
