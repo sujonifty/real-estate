@@ -8,7 +8,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Error from './Pages/Error/Error';
 import AuthProvider from './AuthProvider/AuthProvider';
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CardDetails from './Components/CardDetails';
 import UpdateProfile from './Pages/UpdateProfile/UpdateProfile';
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=>fetch('/categories.json'),
+        loader: () => fetch('/categories.json'),
 
       },
       {
@@ -44,19 +44,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateProfile",
-        element: <UpdateProfile></UpdateProfile>,
+        element: <PrivateRoute>
+          <UpdateProfile></UpdateProfile>
+        </PrivateRoute>,
       },
       {
         path: "/userProfile",
-        element: <UserProfile></UserProfile>,
-        
+        element: <PrivateRoute>
+          <UserProfile></UserProfile>
+        </PrivateRoute >
+
       },
       {
         path: "/cardDetails/:id",
-        element:<PrivateRoute>
+        element: <PrivateRoute>
           <CardDetails></CardDetails>
-        </PrivateRoute> ,
-        loader: ()=>fetch('/categories.json'),
+        </PrivateRoute>,
+        loader: () => fetch('/categories.json'),
       },
     ]
   },
@@ -64,7 +68,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-    <ToastContainer/>,
+      <ToastContainer />,
       <RouterProvider router={router} />
     </AuthProvider>
 

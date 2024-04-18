@@ -32,10 +32,9 @@ const CardDetails = () => {
                             </h1>
                         </div>
                         <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-4xl lg:text-5xl text-white  font-bold">
-                                We are here to <br />
-                                help you find your <br />
-                                dream home.
+                            <h1 className=" text-2xl md:text-4xl lg:text-6xl  text-white text-center  font-bold">
+                            Your Future Home<br />
+                            Is Right Here.
                             </h1>
                             <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Contact us</button>
                         </div>
@@ -45,8 +44,8 @@ const CardDetails = () => {
             </section>
             <section className="bg-sky-200 text-gray-900 my-20 card">
                 <div className="container flex flex-col justify-center  mx-auto lg:flex-row">
-                    <div className="w-full lg:w-1/3 p-5 ">
-                        <img className="rounded-xl shadow-lg" src={image} alt="House" />
+                    <div className="w-full lg:w-1/3  p-5 ">
+                        <img className="rounded-xl w-full h-full object-cover shadow-lg" src={image} alt="House" />
                     </div>
                     <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12 text-left">
 
