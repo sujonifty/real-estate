@@ -5,8 +5,8 @@ const UserProfile = () => {
     const { user } = useContext(authContext);
 
     return (
-        <div className="flex justify-center items-center my-10">
-            <div className="flex flex-col justify-center w-2/3 bg-sky-100 p-6 shadow-xl rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
+        <div className="flex justify-center items-center my-20">
+            <div className="flex flex-col justify-center w-2/3 bg-[#f4ebe4] p-6 shadow-xl rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
                 <img src={user?.photoURL} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
                 <div className="space-y-4 text-center divide-y dark:divide-gray-300">
                     <div className="my-2 space-y-1">

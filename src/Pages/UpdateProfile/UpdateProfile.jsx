@@ -29,9 +29,9 @@ const UpdateProfile = () => {
     return (
         <div>
 
-            <div className="hero min-h-screen my-16 py-16 bg-sky-200 card ">
+            <div className="hero min-h-screen my-16 py-16 bg-sky-100 card ">
                 <div className="hero-content flex-col justify-center items-center ">
-                    <div className="text-center w-3/4 py-10 bg-sky-100 rounded-xl ">
+                    <div className="text-center w-3/4 py-10 bg-[#f4ebe4] rounded-xl ">
                         <h1 className="text-5xl font-bold">
                             Update Your Profile <br />
                             <span className="text-xl font-semibold"> is an essential handbook for refining your online identity</span>

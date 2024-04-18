@@ -8,9 +8,9 @@ const ContactUs = () => {
             <section>
                 <div className="w-full relative ">
                     <div className="relative shadow-xl">
-                        <img className="w-full h-[25rem] md:h-[30rem] " src="https://i.ibb.co/Q87TB3V/banner.jpg" alt="home" />
+                        <img className="w-full h-[25rem] md:h-[30rem] rounded-lg" src="https://i.ibb.co/Q87TB3V/banner.jpg" alt="home" />
                     </div>
-                    <div className="absolute top-0 w-full h-full flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
+                    <div className="absolute top-0 w-full h-full rounded-lg flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
 
                         <div className=" w-full md:w-1/3 md:mt-10 md:ml-5 p-2 md:p-5 md:text-left  ">
                             <h1 className="text-lg rounded-xl p-3 w-auto  text-white">
@@ -32,7 +32,7 @@ const ContactUs = () => {
             </section>
 
             <section>
-                <div className=" w-full md:w-3/5 mx-auto my-10">
+                <div className=" w-full md:w-3/5 mx-auto my-10 bg-[#f4ebe4] p-3 lg:p-10 rounded-xl ">
                     <h1 className=" text-2xl lg:text-5xl text-orange-500 font-bold">Explore Our Exceptional Services and Products</h1>
                     <p>
                     Welcome to Panorama, where we pride ourselves on delivering exceptional [specific service or product]. Whether you're seeking a top-notch property appraisal service, expert consultations, or something uniquely tailored to your needs, you've come to the right place. Allow us to showcase the brilliance of our offerings and how they can meet your every expectation.
@@ -83,22 +83,22 @@ const ContactUs = () => {
                 </div>
             </section>
 
-            <section className=" space-y-10 my-10">
+            <section className=" space-y-10 my-10 bg-[#f4ebe4] p-3 lg:p-10 rounded-xl">
                 <h1 className=" text-6xl text-orange-500 font-bold">
                     What our clients <br />
                     say about us
                 </h1>
 
                 <div className=" flex justify-center  items-stretch gap-5  ">
-                    <p className="w-1/4 text-center ">
+                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                         Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable. <br />
                         <span>-Kistropher</span>
                     </p>
-                    <p className="w-1/4 text-center ">
+                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                     Boost your product's credibility by adding client testimonials. People trust recommendations, so feedback from others who've tried it can make a big difference. <br />
                         <span>-Jhon Casper</span>
                     </p>
-                    <p className="w-1/4 text-center ">
+                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                     Enhance your product's credibility with client testimonials. Trusted recommendations from those who've experienced it firsthand can make a significant impact. <br />
                         <span>-Eric Jonson</span>
                     </p>

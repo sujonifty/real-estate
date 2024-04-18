@@ -19,11 +19,11 @@ const CardDetails = () => {
     return (
         <div>
             <section>
-                <div className="w-full relative card">
+                <div className="w-full relative card ">
                     <div className="relative shadow-xl">
-                        <img className="w-full h-[30rem] " src={image} alt="home" />
+                        <img className="w-full h-[30rem] rounded-xl" src={image} alt="home" />
                     </div>
-                    <div className="absolute top-0 w-full h-full flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
+                    <div className="absolute top-0 w-full h-full rounded-xl flex flex-col md:flex-row justify-center md:justify-between bg-black bg-opacity-35">
 
                         <div className=" w-full md:w-1/3 md:mt-10 md:ml-5 p-2 md:p-5 md:text-left  ">
                             <h1 className="text-lg rounded-xl p-3 w-auto  text-white">
@@ -47,7 +47,7 @@ const CardDetails = () => {
                     <div className="w-full lg:w-1/3  p-5 ">
                         <img className="rounded-xl w-full h-full object-cover shadow-lg" src={image} alt="House" />
                     </div>
-                    <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12 text-left">
+                    <div className="bg-[#f4ebe4]  flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12 text-left">
 
                         <h2 className="text-3xl font-semibold leading-none">{estate_title}</h2>
                         <p className="mt-4 mb-8 text-sm">{description}</p>
