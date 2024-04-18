@@ -45,26 +45,96 @@ const Slide = () => {
                 modules={[Autoplay ,EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img1} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                            Let us help you <br />
+                            make the move.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">List your home</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img2} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                            The best deal for <br />
+                            your ideal home.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Get Started</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img3} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                            Ready to start <br />
+                            a new chapter?
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Click Here</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img4} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                            Handmade for <br />
+                            your dream home.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">List your home</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img5} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-2xl  text-white text-center  font-bold">
+                            Tailored Solutions for   <br />
+                            Your Dream Home.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Get Started</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img6} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                            Let's make your  <br />
+                            vision come to life.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Learn more</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="relative">
                     <img src={img7} />
+                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
+                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-2xl md:text-5xl lg:text-2xl  text-white text-center  font-bold">
+                            Elevating Your Home  <br />
+                            Search Experience.
+                            </h1>
+                            <button className="btn bg-orange-500 text-white hover:text-black mx-auto w-full md:w-full lg:w-4/5 font-bold xl:w-3/5">Search Here</button>
+                        </div>
+
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </>
