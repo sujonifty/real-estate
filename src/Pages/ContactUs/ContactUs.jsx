@@ -84,21 +84,21 @@ const ContactUs = () => {
             </section>
 
             <section className=" space-y-10 my-10 bg-[#f4ebe4] p-3 lg:p-10 rounded-xl">
-                <h1 className=" text-6xl text-orange-500 font-bold">
+                <h1 className="text-3xl lg:text-6xl text-orange-500 font-bold">
                     What our clients <br />
                     say about us
                 </h1>
 
-                <div className=" flex justify-center  items-stretch gap-5  ">
-                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
+                <div className=" flex flex-col lg:flex-row justify-center  items-stretch gap-5  ">
+                    <p className="w-full lg:w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                         Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable. <br />
                         <span>-Kistropher</span>
                     </p>
-                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
+                    <p className="w-full lg:w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                     Boost your product's credibility by adding client testimonials. People trust recommendations, so feedback from others who've tried it can make a big difference. <br />
                         <span>-Jhon Casper</span>
                     </p>
-                    <p className="w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
+                    <p className="w-full lg:w-1/4 text-center border-2 border-gray-300 p-3 shadow-xl rounded-xl ">
                     Enhance your product's credibility with client testimonials. Trusted recommendations from those who've experienced it firsthand can make a significant impact. <br />
                         <span>-Eric Jonson</span>
                     </p>

@@ -47,9 +47,9 @@ const Slide = () => {
             >
                 <SwiperSlide className="relative">
                     <img src={img1} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Let us help you <br />
                             make the move.
                             </h1>
@@ -60,9 +60,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img2} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             The best deal for <br />
                             your ideal home.
                             </h1>
@@ -73,9 +73,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img3} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Ready to start <br />
                             a new chapter?
                             </h1>
@@ -86,9 +86,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img4} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Handmade for <br />
                             your dream home.
                             </h1>
@@ -99,9 +99,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img5} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-2xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Tailored Solutions for   <br />
                             Your Dream Home.
                             </h1>
@@ -112,9 +112,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img6} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-3xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Let's make your  <br />
                             vision come to life.
                             </h1>
@@ -125,9 +125,9 @@ const Slide = () => {
                 </SwiperSlide>
                 <SwiperSlide className="relative">
                     <img src={img7} />
-                    <div className="absolute top-0 w-full h-full rounded-xl flex justify-center  bg-black bg-opacity-50">
-                        <div className="w-full md:w-2/3 flex justify-center items-center flex-col md:m-20 rounded-xl  md:text-left space-y-3 md:space-y-5 p-5 md:p-16 md:pl-0  bg-base-50">
-                            <h1 className=" text-2xl md:text-5xl lg:text-2xl  text-white text-center  font-bold">
+                    <div className="hidden lg:flex absolute top-0 w-full h-full rounded-xl  justify-center  bg-black bg-opacity-50">
+                        <div className="w-full lg::w-11/12 flex justify-center items-center flex-col lg:m-5 rounded-xl  md:text-left space-y-3 lg:space-y-5 p-5 lg:p-16 md:pl-0  bg-base-50">
+                            <h1 className=" text-xl lg:text-3xl  text-white text-center  font-bold">
                             Elevating Your Home  <br />
                             Search Experience.
                             </h1>
