@@ -30,7 +30,7 @@ const Login = () => {
                 toast('Login successfully');
             })
             .catch(error => {
-                console.error(error);
+                setError(error.message);
             })
     }
     // login by google
