@@ -30,7 +30,7 @@ const Login = () => {
                 toast('Login successfully');
             })
             .catch(error => {
-                setError(error.message);
+                toast(error.message);
             })
     }
     // login by google
@@ -44,7 +44,7 @@ const Login = () => {
                 toast('Login successfully by google');
             })
             .catch(error => {
-                setError(error.message);
+                toast(error.message);
             })
     }
     // login by github
@@ -58,7 +58,7 @@ const Login = () => {
                 toast('Login successfully by GitHub');
             })
             .catch(error => {
-                setError(error.message);
+                toast(error.message);
             })
     }
     return (
